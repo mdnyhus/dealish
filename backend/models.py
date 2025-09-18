@@ -1,3 +1,5 @@
+# Note: if this file changes, please also update ../frontend/types.ts
+
 from typing import Optional, List
 from datetime import date
 from sqlmodel import Field, SQLModel, Relationship, UniqueConstraint
