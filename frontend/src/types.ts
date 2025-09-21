@@ -3,11 +3,20 @@
 export interface Item {
   id: number;
   name: string;
+  regular_price: number;
+  regular_unit?: string | null;
+}
+
+export interface Store {
+  id: number;
+  name: string;
+  location?: string | null;
 }
 
 export interface Deal {
   id: number;
   item_id: number;
+  store_id: number;
   price: number;
   unit?: string | null;
   postal_code?: string | null;
